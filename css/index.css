@@ -1,0 +1,147 @@
+html body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #168BD8;
+}
+canvas{
+    background: #fff;
+    box-shadow: -8px 8px 15px #666;
+    float: right;
+}
+.box{
+    width: 80%;
+    height: 70%;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+}
+
+.nav{
+    float: left;
+    width: 18%;
+    height: 100%;
+    perspective: 2000px;
+}
+.file{
+    width: 80%;
+    height: 12%;
+    margin: 9% auto;
+    box-sizing: border-box;
+    position: relative;
+}
+.file_one .in_file div{
+    background: rgb(153,204,51);
+}
+.file_self{
+    box-sizing: border-box;
+    background: rgb(153,204,51);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    transform-origin: left;
+    transition: 0.5s ease transform;
+    font-size: 25px;
+    font-family: "iconfont";
+    /*padding-top: 9%;*/
+    text-align: center;
+    color: #000;
+    cursor: pointer;
+}
+.draw{
+    background: rgb(239,215,0);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+    margin: 9% auto;
+}
+.file_two .in_file div{
+    background: rgb(239,215,0);
+}
+.color{
+    background: rgb(255,249,177);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.file_three .in_file div{
+    background: rgb(255,249,177);
+}
+.leixing{
+    background: rgb(98,90,5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.file_four .in_file div{
+    background: rgb(98,90,5);
+}
+.xiankuan{
+    background: rgb(78,190,186);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.file_five .in_file div{
+    background: rgb(78,190,186);
+}
+.xiangpi{
+    background: rgb(0,255,255);
+    width: 100%;
+    height: 100%;
+    border-radius: 10%;
+}
+.file_six .in_file div{
+    background: rgb(0,255,255);
+}
+@font-face {font-family: 'iconfont';
+    src: url('../node_modules/iconfont/iconfont.eot'); /* IE9*/
+    src: url('../node_modules/iconfont/iconfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../node_modules/iconfont/iconfont.woff') format('woff'), /* chrome、firefox */
+    url('../node_modules/iconfont/iconfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../node_modules/iconfont/iconfont.svg#iconfont') format('svg'); /* iOS 4.1- */
+}
+.file .in_file{
+    display: block;
+    opacity: 0;
+    transform-origin: right;
+    transform: rotateY(-90deg);
+    width:45%;
+    height: 150%;
+    position: absolute;
+    right: 0;top: 10%;
+    z-index: 100;
+    transition: 1s ease all;
+}
+.file .in_file div{
+    box-sizing: border-box;
+    border-radius: 5%;
+    margin: 10% 0;
+    width: 100%;
+    height: 30%;
+    line-height: 140%;
+    text-align: center;
+    color: #000;
+    font-size: 18px;
+    cursor: pointer;
+}
+.box_btm{
+    float: right;
+    position: relative;
+}
+.xp{
+    width: 10px;
+    height: 10px;
+    border: 1px solid #000;
+    position: absolute;
+    left: 0;top: 0;
+    display: none;
+}
+.copy{
+    position: absolute;
+    left: 0;top: 0;
+    width: 100%;
+    height: 100%;
+}
